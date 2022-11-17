@@ -1,4 +1,4 @@
-from api.views import CommentViewSet, GroupViewSet, PostViewSet
+from api.views import CommentViewSet, FollowViewSet, GroupViewSet, PostViewSet
 from django.urls import include, path
 from rest_framework.routers import DefaultRouter
 
@@ -11,7 +11,7 @@ router_v1.register(
     CommentViewSet,
     basename='comments'
 )
-router_v1.register('follow', FollowViewSet)
+router_v1.register('follow', FollowViewSet, basename='follow')
 
 urlpatterns = [
     path('v1/', include(router_v1.urls)),
