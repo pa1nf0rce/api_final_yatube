@@ -9,21 +9,21 @@ api_final_yatube - это мой учебный проект по курсу Pyt
 Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 
->> $ git clone https://github.com/pa1nf0rce/api_final_yatube.git
->> $ cd api_final_yatube
+$ git clone https://github.com/pa1nf0rce/api_final_yatube.git
+$ cd api_final_yatube
 Cоздать и активировать виртуальное окружение:
 
->> python3 -3.7 -m venv venv
->> source venv/Scripts/activate
+python3 -3.7 -m venv venv
+source venv/Scripts/activate
 Установить зависимости из файла requirements.txt:
 
->> pip install -r requirements.txt
+pip install -r requirements.txt
 Выполнить миграции:
 
->> python3 manage.py migrate
+python3 manage.py migrate
 Запустить проект:
 
->> python3 manage.py runserver
+python3 manage.py runserver
 Проект буден доступен по адресу http://127.0.0.1:8000/
 
 Некоторые примеры запросов к API
