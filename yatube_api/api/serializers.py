@@ -21,6 +21,7 @@ class Base64ImageField(serializers.ImageField):
             )
         return super().to_internal_value(data)
 
+
 class PostSerializer(serializers.ModelSerializer):
     author = SlugRelatedField(
         slug_field='username',
